@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+    <body>
+        <div id="main-wrapper">
+            <header>
+                <h1>Twerk Translator</h1> 
+            </header>
+            <main>
+                <div id="left_col">
+                    <textarea name="" id="input_field" cols="60" rows="10"></textarea>
+                </div>
+                <div id="right-col">
+                    <div id="btn_group">
+                        <button type="button" id="english_btn" class="language_btn" onClick="translateTo(this.id)">English</button>
+                        <button type="button" id="french_btn" class="language_btn" onClick="translateTo(this.id)">French</button>
+                        <button type="button" id="chinese_btn" class="language_btn" onClick="translateTo(this.id)">Chinese</button>
+                        <button type="button" id="spanish_btn" class="language_btn" onClick="translateTo(this.id)">Spanish</button>
+                    </div>
+                    <textarea name="" id="output_field" cols="60" rows="10"></textarea>  
+                </div>              
+            </main>
+            <div class="push"></div>
+        </div>
+        <footer>
+            <p>Jeffrey Chen &copy; 2018</p>
+        </footer>
+        <script src="main.js"></script>
+    </body>
+</html>
