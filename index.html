@@ -14,23 +14,30 @@
             </header>
             <main>
                 <div id="left_col">
+                    <div class="btn_group">
+                        <p>Type your words here:</p>
+                    </div>
                     <textarea name="" id="input_field" cols="60" rows="10"></textarea>
                 </div>
                 <div id="right-col">
-                    <div id="btn_group">
+                    <div class="btn_group">
                         <button type="button" id="english_btn" class="language_btn" onClick="translateTo(this.id)">English</button>
                         <button type="button" id="french_btn" class="language_btn" onClick="translateTo(this.id)">French</button>
                         <button type="button" id="chinese_btn" class="language_btn" onClick="translateTo(this.id)">Chinese</button>
                         <button type="button" id="spanish_btn" class="language_btn" onClick="translateTo(this.id)">Spanish</button>
+                        <button type="button" id="random_btn" class="language_btn" onClick="translateTo(this.id)">I'm Feeling Lucky</button>
                     </div>
-                    <textarea name="" id="output_field" cols="60" rows="10"></textarea>  
-                </div>              
+                    <textarea name="" id="output_field" cols="60" rows="10"></textarea> 
+                    <p id="invalid_input"></p> 
+                </div>
             </main>
             <div class="push"></div>
         </div>
         <footer>
             <p>Jeffrey Chen &copy; 2018</p>
         </footer>
+        <button type="button" onClick="speak('快乐')">I'm Feeling Lucky</button>
+        
         <script src="main.js"></script>
     </body>
 </html>
