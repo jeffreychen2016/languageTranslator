@@ -1,7 +1,7 @@
 /* *{
     border: 1px black solid;
 } */
-
+/*------------- Generic -------------*/
 html,
 body{
     margin:0;
@@ -9,27 +9,23 @@ body{
     height: 100%;
 }
 
-#main-wrapper{
-    width: 70%;
-    margin: 0 auto;
-    min-height: 100%;
-    margin-bottom: -50px;
-}
-
 header,
 footer{
     text-align: center;
 }
 
-footer,
-.push {
-  height: 50px;
-}
-
 main{
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+}
+
+textarea{
+    border-radius: 5px;
+}
+
+/*------------- Button -------------*/
+.btn_group{
+    display: flex;
 }
 
 .language_btn{
@@ -38,9 +34,36 @@ main{
     border-radius: 5px;
 }
 
+.language_btn:last-child{
+    margin-left: auto;
+}
+
 .language_btn:focus{
     background-color: grey;
     outline:0;
+}
+
+/*------------- sticky footer -------------*/
+#main-wrapper{
+    width: 70%;
+    margin: 0 auto;
+    min-height: 100%;
+    margin-bottom: -80px;
+}
+
+footer,
+.push {
+  height: 80px;
+}
+
+/*------------- Message -------------*/
+div p{
+    margin: 0;
+    height: 30px;
+}
+
+#invalid_input{
+    color: red;
 }
 
 
