@@ -48,8 +48,6 @@ function translateTo(outputLanguage){
     //invalidInput[0] != '': when no input,invalidInput.length will still be 1
     if(invalidInput.length > 0 && invalidInput[0] != ''){
         invalidInputString = invalidInput.join(',') + ' is(are) not in the dictionary.';
-    }else if(invalidInput.length > 0 && invalidInput[0] == ''){
-        alert('Please type in the words you want to translate!');
     }else{
         invalidInputString = invalidInput.join(',');
     }
@@ -94,6 +92,14 @@ var dictionary =
     new:['new','新','Nouveau','nuevo'],
     year:['year','年','an','año']
 }
+
+function applicationRuns(){
+    var targetButton = document.getElementById('english_btn');
+    targetButton.addEventListener("click",translateTo('english_btn'));
+}
+
+applicationRuns();
+
 
 
 
